@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8abd2e741a36076863bd95d0926c014e",
+    "revision": "23b97b2c70166d6b75d6cdab315b9abb",
     "url": "/tams-clubs/index.html"
   },
   {
-    "revision": "64d40ffe760ec73e6aeb",
-    "url": "/tams-clubs/static/css/main.0381aabc.chunk.css"
+    "revision": "97a1ce8a6360dfbcb72f",
+    "url": "/tams-clubs/static/css/main.41b375f7.chunk.css"
   },
   {
     "revision": "fbda36fb5427fd916d9c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tams-clubs/static/js/2.edd5600c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64d40ffe760ec73e6aeb",
+    "revision": "97a1ce8a6360dfbcb72f",
     "url": "/tams-clubs/static/js/main.73846592.chunk.js"
   },
   {
