@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tams-clubs/precache-manifest.dc5f4f935d7f2cbf985daefda5f83c3d.js"
+  "/tams-clubs/precache-manifest.ff82b3e4982107aeeb0754f08dedd061.js"
 );
 
 self.addEventListener('message', (event) => {

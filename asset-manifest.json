@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tams-clubs/static/css/main.69bfe00a.chunk.css",
+    "main.css": "/tams-clubs/static/css/main.6bf432bd.chunk.css",
     "main.js": "/tams-clubs/static/js/main.ada58292.chunk.js",
     "main.js.map": "/tams-clubs/static/js/main.ada58292.chunk.js.map",
     "runtime-main.js": "/tams-clubs/static/js/runtime-main.edbe2cd3.js",
@@ -8,15 +8,15 @@
     "static/js/2.edd5600c.chunk.js": "/tams-clubs/static/js/2.edd5600c.chunk.js",
     "static/js/2.edd5600c.chunk.js.map": "/tams-clubs/static/js/2.edd5600c.chunk.js.map",
     "index.html": "/tams-clubs/index.html",
-    "precache-manifest.dc5f4f935d7f2cbf985daefda5f83c3d.js": "/tams-clubs/precache-manifest.dc5f4f935d7f2cbf985daefda5f83c3d.js",
+    "precache-manifest.ff82b3e4982107aeeb0754f08dedd061.js": "/tams-clubs/precache-manifest.ff82b3e4982107aeeb0754f08dedd061.js",
     "service-worker.js": "/tams-clubs/service-worker.js",
-    "static/css/main.69bfe00a.chunk.css.map": "/tams-clubs/static/css/main.69bfe00a.chunk.css.map",
+    "static/css/main.6bf432bd.chunk.css.map": "/tams-clubs/static/css/main.6bf432bd.chunk.css.map",
     "static/js/2.edd5600c.chunk.js.LICENSE.txt": "/tams-clubs/static/js/2.edd5600c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.edbe2cd3.js",
     "static/js/2.edd5600c.chunk.js",
-    "static/css/main.69bfe00a.chunk.css",
+    "static/css/main.6bf432bd.chunk.css",
     "static/js/main.ada58292.chunk.js"
   ]
 }
