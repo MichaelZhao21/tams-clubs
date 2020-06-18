@@ -1,52 +1,47 @@
-.scene {
-    width: 18em;
-    height: 18em;
-    perspective: 600px;
-  }
-
-
-.card {
-    width: 100%;
-    height: 100%;
+.cardContainer{
     position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+    display: inline-block;
+    width: 22em;
+    height: 26em;
+    margin: 2em;
 }
 
-
-.cardFace{
+.card{
     position: absolute;
-    height: 100%;
     width: 100%;
-    backface-visibility: hidden;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.flipped {
+    transform: rotateY( 180deg );
 }
 
 .front{
-    background: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 6em auto;
+    padding: 2em;
 }
 
 .back{
-    background: blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
     transform: rotateY(180deg);
-}
-
-.isFlipped {
-    transform: rotateY(180deg);
-}
-
-.ClubItem{
-    box-sizing: content-box; 
-    width: 18em;
-    height: 15em;
-    text-align: center;
-    display: inline-grid;
-    grid-template-rows: 6em auto;
-    margin: 2em;
-    padding: 2em 0.5em;
-}
-
-.ClubItem:hover{
-    cursor: pointer;
 }
 
 i{
@@ -78,22 +73,28 @@ i{
     font-size: 0.85em;
 }
 
-@media screen and (max-width: 460px){
-    .ClubItem{
-        width: 100%;
+@media screen and (max-width: 480px){
+    .cardContainer{
+        width: 90%;
         height: 4em;
+        display: block;
+        margin: 2em 0 2em auto;
+    }
+
+    .card{
+        box-shadow: none;
+    }
+
+    .front{     
         grid-template-columns: 4em auto;
         grid-template-rows: none;
         text-align: left;
-        box-shadow: none;
         padding: 0;
-        margin: 1em auto;
     }
     
     i{
         width: 100%;
         margin: 0;
-
     }
 
     .wrapper{
@@ -121,4 +122,11 @@ i{
         font-size: 0.65em;
     }
 
+    .flipped{
+        transform: none;
+    }
+
+    .back{
+        display: none;
+    }
 }

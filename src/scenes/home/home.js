@@ -9,16 +9,8 @@ import Clubs from '../../assets/Clubs.js';
 
 class Home extends React.Component{
     
-
-
-    clubClickedHandler = (e) => {
-        e.target.classList.toggle(cardStyles.isFlipped);
-        console.log(e.target.classList);
-        console.log('club clicked');
-    };
-
-
     render(){
+
         const clubList = Clubs.map((club, index) => {
             return (
                 <ClubItem
@@ -26,7 +18,7 @@ class Home extends React.Component{
                     clubName={club.clubName}
                     clubDesc={club.clubDesc}
                     clubType={club.clubType}
-                    click={this.clubClickedHandler}
+                    
                 />
             );
         });
@@ -38,7 +30,7 @@ class Home extends React.Component{
                 <hr />
     
                 <div className={styles.wrapper}>
-                    <ClubItem click={this.clubClickedHandler}/>
+                    {clubList}
                 </div>
             </div>
         );
