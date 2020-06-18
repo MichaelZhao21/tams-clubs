@@ -1,0 +1,124 @@
+.scene {
+    width: 18em;
+    height: 18em;
+    perspective: 600px;
+  }
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+.cardFace{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front{
+    background: red;
+}
+
+.back{
+    background: blue;
+    transform: rotateY(180deg);
+}
+
+.isFlipped {
+    transform: rotateY(180deg);
+}
+
+.ClubItem{
+    box-sizing: content-box; 
+    width: 18em;
+    height: 15em;
+    text-align: center;
+    display: inline-grid;
+    grid-template-rows: 6em auto;
+    margin: 2em;
+    padding: 2em 0.5em;
+}
+
+.ClubItem:hover{
+    cursor: pointer;
+}
+
+i{
+    width: 6em;
+    margin: 0 auto;
+    background-color: #5ece1d;
+    border-radius: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+}
+
+.wrapper h4{
+    font-size: 1.6em;
+    color: #141415;
+    margin: 0.3em 0 0 0;
+}
+
+.wrapper p{
+    font-size: 1.1em;
+    color: #888888;
+    font-weight: 500;
+    margin: 0em;
+}
+
+.wrapper .clubType{
+    font-size: 0.85em;
+}
+
+@media screen and (max-width: 460px){
+    .ClubItem{
+        width: 100%;
+        height: 4em;
+        grid-template-columns: 4em auto;
+        grid-template-rows: none;
+        text-align: left;
+        box-shadow: none;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    i{
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .wrapper{
+        height: inherit;
+        grid-template-rows: 35% 30% 35%;
+        padding: 0.1em 0 0.3em;
+        margin-left: 1em;
+    }
+    
+    .wrapper h4, .wrapper p{
+        margin: 0;
+    }
+
+    .wrapper h4{
+        font-size: 1.1em;
+    }
+
+    .wrapper p{
+        margin-left: 0.1em;
+        font-size: 0.8em;
+    }
+
+    .wrapper .clubType{
+        margin-top: 0.5em;
+        font-size: 0.65em;
+    }
+
+}

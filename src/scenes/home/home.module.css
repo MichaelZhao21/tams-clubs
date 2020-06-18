@@ -1,0 +1,14 @@
+.header{
+    margin: 2em auto 1em auto;
+    width: 5.6em;
+}
+
+hr{
+    width: 80%;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
